@@ -2,6 +2,7 @@
 # ejemplo 1 importar wx
 
 app = wx.App (clearSigInt = True) # clearSigInt para permitir la terminación del programa con CTRL + C frame = wx.Frame (parent = None, title = "") ## main window object panel = wx.Panel (parent = frame ) text = wx.StaticText (parent = panel, label = "Hola, desde wxPython !!", pos = (40,50)) frame.Show () app.MainLoop ()
+![image](https://user-images.githubusercontent.com/79875930/112524973-07161380-8d66-11eb-82bd-d11e5e7ed7ba.png)
 
 
 
@@ -18,7 +19,8 @@ class MyFrame (wx.Frame): # subclase de wx.Window; El marco es una ventana de ni
 def OnInit (self):
     panel = MyPanel (padre = yo)
    
-   
+   ![image](https://user-images.githubusercontent.com/79875930/112525071-214ff180-8d66-11eb-9558-f97823fbd446.png)
+
    
 # ejemplo 3 import wx import webbrowser
 
@@ -48,6 +50,9 @@ def onSubmit (self, event):
     
 if name == "main": app = MyApp () app.MainLoop () 
 
+![image](https://user-images.githubusercontent.com/79875930/112525130-2f057700-8d66-11eb-833b-4404f9823f34.png)
+![image](https://user-images.githubusercontent.com/79875930/112525208-43e20a80-8d66-11eb-9da6-e73d2be7ae24.png)
+
 
 # ejemplo 4 import wx
 
@@ -68,9 +73,10 @@ class MyPanel (wx.Panel): # Un panel es una ventana en la que se colocan los con
     
      # agregar un cuadro de texto
     self._text = wx.TextCtrl (parent = self, value = 'INGRESE ALGUN TEXTO AQUÍ', pos = (20,60), size = (300, 50))
-    # agregar un botón para abrir el cuadro de diálogo
+    # agregar un botón para abrir el cuadro de diálogo![image](https://user-images.githubusercontent.com/79875930/112525146-3462c180-8d66-11eb-8533-4f7ee19fbdc0.png)
+
+
     self._buton = wx.Button (parent = self, label = 'Submit', pos = (20, 120))
-    self._buton.Bind (wx.EVT_BUTTON, self.onSubmit) # vincular acción al botón
 def ShowDialog (self):
     # ¡Aparece una ventana de diálogo de mensaje al enviar!
     si self._dont_show:
@@ -93,6 +99,9 @@ aplicación = MyApp ()
 frame = MyFrame (parent = None, title = "Este es un marco")
 app.MainLoop ()
 
+![image](https://user-images.githubusercontent.com/79875930/112525384-7429a900-8d66-11eb-889a-7259b15690ef.png)
+
+![image](https://user-images.githubusercontent.com/79875930/112525412-7b50b700-8d66-11eb-8eac-3ff05b71404a.png)
 
 # ejemplo 5 importar wx
 
@@ -200,3 +209,7 @@ def getData (self):
     devolver datos
 Ejecuta el programa
 if nombre == 'principal': aplicación = MyApp () app.MainLoop ()
+![image](https://user-images.githubusercontent.com/79875930/112525466-89063c80-8d66-11eb-8d9a-17ec2d9989fa.png)
+
+![image](https://user-images.githubusercontent.com/79875930/112525495-8efc1d80-8d66-11eb-89d5-c37fac50324e.png)
+
